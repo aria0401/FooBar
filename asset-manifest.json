@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/FooBar/static/css/main.c99a8464.chunk.css",
-    "main.js": "/FooBar/static/js/main.a15faa1d.chunk.js",
-    "main.js.map": "/FooBar/static/js/main.a15faa1d.chunk.js.map",
+    "main.js": "/FooBar/static/js/main.199e9584.chunk.js",
+    "main.js.map": "/FooBar/static/js/main.199e9584.chunk.js.map",
     "runtime-main.js": "/FooBar/static/js/runtime-main.ee7cf6f6.js",
     "runtime-main.js.map": "/FooBar/static/js/runtime-main.ee7cf6f6.js.map",
-    "static/js/2.f5299e01.chunk.js": "/FooBar/static/js/2.f5299e01.chunk.js",
-    "static/js/2.f5299e01.chunk.js.map": "/FooBar/static/js/2.f5299e01.chunk.js.map",
+    "static/js/2.637b7f90.chunk.js": "/FooBar/static/js/2.637b7f90.chunk.js",
+    "static/js/2.637b7f90.chunk.js.map": "/FooBar/static/js/2.637b7f90.chunk.js.map",
     "index.html": "/FooBar/index.html",
     "static/css/main.c99a8464.chunk.css.map": "/FooBar/static/css/main.c99a8464.chunk.css.map",
-    "static/js/2.f5299e01.chunk.js.LICENSE.txt": "/FooBar/static/js/2.f5299e01.chunk.js.LICENSE.txt",
+    "static/js/2.637b7f90.chunk.js.LICENSE.txt": "/FooBar/static/js/2.637b7f90.chunk.js.LICENSE.txt",
     "static/media/arrow.132e1dc7.svg": "/FooBar/static/media/arrow.132e1dc7.svg",
     "static/media/beer-mug.09f86665.svg": "/FooBar/static/media/beer-mug.09f86665.svg",
     "static/media/cart.0a22d203.svg": "/FooBar/static/media/cart.0a22d203.svg",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ee7cf6f6.js",
-    "static/js/2.f5299e01.chunk.js",
+    "static/js/2.637b7f90.chunk.js",
     "static/css/main.c99a8464.chunk.css",
-    "static/js/main.a15faa1d.chunk.js"
+    "static/js/main.199e9584.chunk.js"
   ]
 }
