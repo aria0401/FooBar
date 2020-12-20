@@ -36,7 +36,7 @@ export default function Beer(props) {
           if (props.item.name === beerImage.name) {
             
             return (
-              <Link to={`/details/${beerImage.name}`}>
+              <Link to={`/details/${props.item.id}`}>
                 
                     <img
                 key={index}

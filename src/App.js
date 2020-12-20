@@ -140,6 +140,15 @@ export default function App() {
     getBeers(setBeers);
   }, []);
 
+  
+
+  const renderBeerProps = (routerProps) => {
+    let propsId = parseInt(routerProps.match.params.id);
+    let foundBeer = cartItems.find(beerObj => beerObj.id === propsId);
+    return ( <Details  foundBeer={foundBeer} updateRating={updateRating}
+      setShowNav={setShowNav}  beers={beers}/> )
+  }
+
   return (
     <div className="App">
       <Router>
@@ -147,7 +156,7 @@ export default function App() {
           {showNav && <Nav />}
 
           <Switch>
-            <Route path="/details/:beerId" component={Details} cartItems={cartItems}>
+            <Route path="/details/:id" render = {routerProps => renderBeerProps(routerProps)}> 
             </Route>
             <Route path="/message">
               <Message

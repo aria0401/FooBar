@@ -21,7 +21,7 @@ export function getData(callback1, callback2) {
             amount: 0,
             price: 45,
             rating: 3,
-            id:index
+            id:index+1
           });
         }
       });
