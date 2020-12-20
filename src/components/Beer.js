@@ -53,7 +53,7 @@ export default function Beer(props) {
             <button onClick={handleIncrement}>+</button>
           </div>
 
-          <input type="button" value="See Details" onClick={togglePopup} />
+          <input type="button" value="Details" onClick={togglePopup} />
         </div>
       </div>
 

@@ -35,7 +35,7 @@
     height: auto;
     width: 22vw;
     margin-left: 20px;
-    margin-top: 4.5vw;
+    margin-top: 8.5vw;
     cursor: pointer;
   }
 }
@@ -52,57 +52,76 @@
 .Home {
   .home-wrapper {
     margin: 0 auto;
-    width: 50vw;
-    height: 50vw;
+    // width: 50vw;
+    // height: 50vw;
+    width: 60vw;
+    height: 60vw;
     text-align: center;
     border: $header-background-color 4px solid;
     border-radius: 50%;
-    padding: 70px;
+    // padding: 70px;
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
 
-@media screen and (min-width: 992px) {
-  .Home {
-    .logo {
-      height: auto;
-      width: 10vw;
-      margin-left: 20px;
-      margin-top: 6.5vw;
-    }
-  }
-  .Home {
-    h1 {
-      color: $header-background-color;
-      font-size: 5vw;
-    }
-  }
-
+@media screen and (min-width: 500px) {
   .Home {
     .home-wrapper {
-      margin: 0 auto;
-      width: 30vw;
-      height: 30vw;
-      text-align: center;
-      border: $header-background-color 4px solid;
-      border-radius: 50%;
-      padding: 40px;
+      width: 40vw;
+      height: 40vw;
+    }
+    .logo {
+      width: 14vw;
+      margin-left: 2vw;
+      margin-top: 7.5vw;
+    }
+    h1 {
+      font-size: 8vw;
     }
   }
 }
 
-// Height breack point
-
-@media screen and (max-height: 600px) {
+@media screen and (min-width: 800px) {
   .Home {
-    height: 100%;
+    .home-wrapper {
+      width: 35vw;
+      height: 35vw;
+    }
+    .logo {
+      width: 12vw;
+      margin-top: 5.5vw;
+    }
+    h1 {
+      font-size: 6vw;
+    }
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media screen and (min-width: 992px) and(max-height: 900px) {
+@media screen and (min-width: 1000px) {
   .Home {
-    height: 100vh;
+    .home-wrapper {
+      width: 30vw;
+      height: 30vw;
+    }
+    .logo {
+      width: 10vw;
+    }
+    h1 {
+      font-size: 6vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-height: 1300px) {
+  .Home {
+    .home-wrapper {
+      width: 25vw;
+      height: 25vw;
+    }
+    .logo {
+      width: 9vw;
+    }
+    h1 {
+      font-size: 5vw;
+    }
   }
 }
