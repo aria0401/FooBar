@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Popup from "./Popup";
 import beerImages from "./BeerImages";
+import { Link } from "react-router-dom";
 
 export default function Beer(props) {
   const filteredBeers = props.beers.filter(
@@ -26,19 +27,26 @@ export default function Beer(props) {
     props.applayRating();
   };
 
+ 
+
   return (
     <article>
       <div className="BeersList">
         {beerImages.map((beerImage, index) => {
           if (props.item.name === beerImage.name) {
+            
             return (
-              <img
+              <Link to={`/details/${beerImage.name}`}>
+                
+                    <img
                 key={index}
                 className="beer-tap-img"
                 alt="beerImage"
                 src={process.env.PUBLIC_URL + beerImage.linkImg}
-                onClick={togglePopup} 
               />
+              
+              </Link>
+          
             );
           }
           return <div key={index}></div>;

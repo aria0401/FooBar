@@ -14,13 +14,14 @@ export function getData(callback1, callback2) {
     .then((data) => {
       const updatedData = [];
 
-      data.taps.forEach((item) => {
+      data.taps.forEach((item, index) => {
         if (updatedData.filter((i) => i.name === item.beer).length === 0) {
           updatedData.push({
             name: item.beer,
             amount: 0,
             price: 45,
             rating: 3,
+            id:index
           });
         }
       });

@@ -7,6 +7,7 @@ import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import Payment from "./pages/Payment";
 import Message from "./pages/Message";
+import Details from "./pages/Details";
 import Nav from "./components/Nav";
 import "./App.scss";
 import {
@@ -146,6 +147,8 @@ export default function App() {
           {showNav && <Nav />}
 
           <Switch>
+            <Route path="/details/:beerId" component={Details} cartItems={cartItems}>
+            </Route>
             <Route path="/message">
               <Message
                 message={message}
@@ -190,9 +193,13 @@ export default function App() {
             <Route path="/">
               <Home displayNav={displayNav} />
             </Route>
+         
           </Switch>
         </div>
       </Router>
     </div>
   );
 }
+
+
+
